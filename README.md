@@ -1,4 +1,0 @@
-proglang-hw
-===========
-
-proglang homework
