@@ -27,7 +27,7 @@ fun get_nth(strings: string list, n: int) =
     if n = 1 then hd strings else get_nth(tl strings, n - 1)
 
 fun date_to_string(date: (int * int * int)) = 
-    get_nth(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], #2 date) ^ " " ^ Int.toString(#1 date) ^ ", " ^ Int.toString(#3 date)
+    get_nth(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], #2 date) ^ " " ^ Int.toString(#3 date) ^ ", " ^ Int.toString(#1 date)
 
 fun number_before_reaching_sum(sum: int, listOfNumbers: int list) = 
     let fun num_internal(sum: int, listOfNumbers: int list, acc: int, counter: int) = 
